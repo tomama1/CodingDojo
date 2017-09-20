@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fake Blog</title>
+        <meta name="description" content=" A fake blog about Mark Wahlberg">
+    </head>
+    <body>
+        <a href="https://en.wikipedia.org/wiki/Mark_Wahlberg"> <h1>Mark Wahlberg </h1></a>
+        <div>
+            <p>
+            Mark Robert Michael Wahlberg (born June 5, 1971)[1] is an American actor, producer, businessman, former model, and former rapper. 
+            Wahlberg was known as Marky Mark in his early career as frontman for the group Marky Mark and the Funky Bunch, releasing the albums 
+            Music for the People and You Gotta Believe. Wahlberg later transitioned to acting, appearing in films such as the drama Boogie Nights
+            and the satirical war comedy-drama Three Kings during the 1990s. In the 2000s, he starred in the biographical disaster drama 
+            The Perfect Storm, the science fiction film Planet of the Apes, the heist film The Italian Job, and the Martin Scorsese-directed 
+            neo-noir crime drama The Departed, for which he received an Academy Award nomination for Best Supporting Actor. In the 2010s, 
+            he starred in the action comedy The Other Guys alongside Will Ferrell, the biographical sports drama The Fighter 
+            (for which he earned an Academy Award nomination as a producer for Best Picture), the comedy Ted, the war film Lone Survivor, 
+            the crime comedy Pain & Gain, the science fiction action film Transformers: Age of Extinction and the sequel 
+            Transformers: The Last Knight, the comedy Daddy's Home, the disaster film Deepwater Horizon, and the thriller Patriots Day.
+            </p>
+        </div>
+        <table> 
+            <thead>Filmography</thead>
+            <tr>
+                <td>2006</td>
+                <td>Departed</td>
+                <td>Sgt. Sean Dignam</td>
+            </tr>
+            <tr>
+                <td>2007</td>
+                <td>Shooter</td>
+                <td>Bob Lee Swagger </td>
+        </table>
+        <ul>Part of the boy band New Kids on the Block
+            <li><ul>Owns Wahlburger Franchise Along with
+                    <li> Donnie Wahlberg </li>
+                    <li> Paul Wahlberg </li>
+                    <li> Rick Vanzura </li>
+                </ul>
+            </li>
+        </ul>
+        <form>
+            <div>
+                <h1> How big of a fan are you? </h1>
+                <table>
+                    <tr>
+                        <td>First Name: </td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name: </td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Email </td>
+                        <td><input type="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Big Fan<input type="checkbox"> </td>
+                        <td>Small Fan <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>I would like to receive emails about Wahlberg</td>
+                        <td>Yes<input type="radio">No <input type="radio"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

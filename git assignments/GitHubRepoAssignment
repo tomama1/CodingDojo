@@ -1,0 +1,9 @@
+mkdir GitHubRepoAssignment
+cd GitHubRepoAssignment
+git init
+git remote add origin https://github.com/tomama1/GitHubRepoAssignment.git
+git push origin master
+git status
+git add .
+git commit -m "initial commit"
+git push origin master

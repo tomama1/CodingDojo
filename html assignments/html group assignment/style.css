@@ -1,0 +1,53 @@
+.row{
+    text-align:center;
+}
+
+.redblock{
+    margin: auto;
+    display: inline-block;
+    background-color:red;
+    height:25vh;
+    width:40vw;
+}
+
+.blueblock{
+    margin: auto;
+    display: inline-block;
+    width:80vw;
+    height:25vh;
+    background-color: blue;
+}
+
+.yellowblock{
+    margin: auto;
+    display: inline-block;
+    width: 26.5vw;
+    height:25vh;
+    background-color: yellow;
+}
+
+.greenwrapper{
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    background-color:green;
+    width: 80vw;
+    height:25vh;
+    text-align:center;
+}
+.purpleblock{
+    position: relative;
+    display: inline-block;
+    background-color: purple;
+    width: 20%;
+    height: 50%;
+}
+#left4{
+    margin: 40px 120px 20px 20px;
+}
+#middle4{
+    background-color: green;
+}
+#right4{
+    margin: 40px 20px 20px 120px;
+}

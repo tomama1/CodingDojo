@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    padding: 10px 10px 10px 15px;
+}
+#continue{
+    text-decoration: underline;
+}
+#header{
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 60px 0px 60px;
+    background-color: rgb(237, 237, 237);
+}
+#maincontent{
+    background: radial-gradient(circle, rgb(111,89,100), rgb(27,11,15));
+
+}
+#title{
+    display: inline-block;
+    float: left;
+    font-family: 'Comic Sans MS';
+}
+#title-description{
+    display: inline-block;
+    float: right;
+}
+
+#row1{
+    padding: 10px 60px 10px 60px;
+}
+#portrait{
+    display: inline-block;
+}
+#imgportrait{
+    border-style: solid;
+    border-color: rgb(237, 237, 237);
+    width: auto;
+    height: 330px;
+}
+#about-me{
+    padding: 0px 0px 15px 0px;
+    float: right;
+    width: 600px;
+    height: 315px;
+    display: inline-block;
+    background-color: white;
+    
+}
+.title{
+    background: linear-gradient(#bdc3c7, rgb(138,136,149), #bdc3c7);
+    padding: 5px 5px 5px 15px;
+    color: white;
+    font-size: 20px;
+}
+#about-des{
+    padding: 5px 5px 5px 0px;
+}
+
+#row2{
+    display: inline-block;
+    padding: 10px 30px 10px 30px;
+}
+
+.column{
+    display: inline-block;
+    margin: 20px 20px 30px 30px;
+    width: 350px;
+    height: 650px;
+    background: linear-gradient(to right, rgb(237, 237, 237), rgb(218,203,217));
+
+}
+.img3{
+    width: 350px;
+    height: auto;
+}
+.techicons{
+    padding: 8px 8px 8px 8px;
+}
+.icon{
+    height: 60px;
+    width: 60px;
+    padding: 0px 3px 0px 0px;
+
+}
+.text{
+    height: 200px;
+}
+
+#footer{
+    margin:0px 0px 0px 0px;
+    background-color: rgb(237, 237, 237);
+}
+#email{
+    padding: 10px 0px 2px 0px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+}
+#social{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.socialicon{
+    height: 15px;
+    width: 15px;
+}
+.underline{
+    text-decoration: underline;
+    font-style: italic;
+}
+#button{
+    text-align: center;
+}
+.button{
+    background-color: rgb(64,125,97);
+    font-size: 11px;
+    padding: 0px 2px 0px 2px;
+    display: inline-block;
+    border-style:solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 15%;
+    height: 25px;
+    color: white;
+    box-shadow: 3px 3px 5px #888888;
+}
