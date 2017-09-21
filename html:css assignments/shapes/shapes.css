@@ -1,0 +1,38 @@
+* {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.shape{
+
+    margin-bottom: 75px;
+}
+
+#square{
+    background: blue;
+    width: 150px;
+    height: 150px;
+}
+
+#circle{
+    background: blue;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+#uptriangle{
+    width: 0px;
+    height: 0px;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid blue;
+}
+
+#pacman{
+    width:0px;
+    height:0px;
+    border: 75px solid blue;
+    border-right: 75px solid transparent;
+    border-radius: 75px;
+
+}
