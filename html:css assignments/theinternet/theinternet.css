@@ -1,0 +1,206 @@
+* {
+    margin : 0px;
+    padding : 0px;
+    font-family: Arial;
+}
+
+#globe{
+    height: 100px;
+    width: auto;
+    position: absolute;
+}
+
+#title{
+    display: inline-block;
+    width: 100vw;
+}
+#title > h1{
+    margin-left: 100px;
+    padding: 30px 0px 10px 0px;
+    display: inline-block;
+    height: 45px;
+    font-size: 45px;
+
+    color: rgb(71,71,71);
+}
+#title > h2{
+    line-height: 55px;
+    color: white;
+    height: 55px;
+    display: block;
+    background: linear-gradient(rgb(35,106,156), rgb(70,127,166), rgb(35,106,156));
+    font-size: 36px;
+    padding-left: 20px;
+}
+.shblue {
+    color: rgb(35,106,156);
+}
+
+#sidebar{
+    display: inline-block;
+    margin-top: 5vh;
+    margin-left: 1vw;
+    width: 230px;
+}
+.red {
+    color: red;
+}
+
+#whatsinternet{
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+    border-color: grey;
+}
+
+.button{
+    margin-top: 3px;
+    margin-left: 10px;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 1px 1px 1px #888888;
+    
+}
+
+#bluebutton{
+    background: linear-gradient(rgb(70,127,166),rgb(35,106,156));
+}
+#orangebutton{
+    background: linear-gradient(rgb(237,167,94),rgb(243,116,27))
+}
+#skybluebutton{
+    height: 40px;
+    margin-top: 160px;
+    margin-right: 20px;
+    background: linear-gradient(rgb(113,209,221),rgb(0,193,220))
+}
+
+#ad{
+    position: absolute;
+    color: white;
+    margin-top: 40px;
+    width: 230px;
+    text-align: center;
+}
+#adbackground{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 230px;
+}
+
+#ninja{
+    position: absolute;
+    height: 130px;
+    margin-left: 65px;
+}
+
+#maincontent{
+    vertical-align:top;
+    margin-left: 50px;
+    display: inline-block;
+}
+#house{
+    display: inline-block;
+    height: 25px;
+    padding-top:20px;
+}
+#info > h3 {
+    display: inline-block;
+    color: rgb(35,106,156);
+}
+#info{
+    border-bottom: 2px solid;
+    border-color: grey;
+    padding-bottom: 20px;
+}
+#contactinfo{
+    text-align:right;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 705px;
+    color: grey;
+    font-size: 12px;
+}
+#phone{
+    display: inline-block;
+    vertical-align: top;
+    position:absolute;
+    margin:10px 0px 0px 650px;
+    height: 50px;
+}
+#contactinfo > h2 {
+    color: rgb(0,193,220);
+    font-size: 30px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#clients{
+    margin-top: 10px;
+    width: 900px;
+    line-height: 25px;
+}
+
+.bluetitle{
+    font-size:28px;
+    line-height: 35px;
+    color: rgb(35,106,156)
+}
+#clients > p{
+    line-height: 30px;
+}
+#clients > ul{
+    padding-left: 40px;
+}
+#clients > ul > li {
+    padding-left: 8px;
+    line-height: 20px;
+}
+#clients > ol {
+    padding-left: 40px;
+}
+.lightblue{
+    color: rgb(0,193,220);
+}
+
+#diagram{
+    height: 150px;
+    display:block;
+    padding: 20px 0px 20px 250px;
+}
+#big3{
+    margin-top: 30px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgb(0,135,217);
+    border-bottom: transparent;
+    box-shadow: 2px 2px 2px #888888;
+
+}
+#html{
+    display: inline-block;
+    padding: 10px 0px 0px 10px;
+    height: 130px;
+}
+
+#big3text{
+    padding: 10px 0px 10px 15px;
+    display:inline-block;
+    vertical-align: top;
+    width: 710px;
+}
+#big3text > p{
+    line-height: 20px;
+    padding-top: 5px;
+}
+#big3text > h4{
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
