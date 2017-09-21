@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cell {
+    border: 1px dotted red;
+    height: 80px;
+    width: 60px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 1px;
+}
+.blueElem{
+    background-color: lightblue;
+}
+.yellowElem{
+    background-color: gold;
+}

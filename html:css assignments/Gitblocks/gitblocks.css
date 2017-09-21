@@ -1,0 +1,128 @@
+
+h3{
+    margin: 0px;
+}
+#wrapper{
+    padding: 0px auto;
+    margin: 0px auto;
+    background-color: grey;
+    width: 970px;
+    
+}
+#header{
+    display: inline-block;
+    height: 80px;
+    width: 940px;
+    vertical-align:middle;
+    background-color: #26B1AC;
+    margin: 15px 0px 15px 15px;
+}
+
+#header > #firstoption{
+    margin-left: 160px;
+}
+
+#header > a{
+    margin-left: 10px;
+    vertical-align:middle;
+    color: white;
+    
+}
+#logo{
+    display: inline-block;
+    height: 60px;
+    vertical-align:middle;
+    margin: 10px 0px 10px 10px;
+    mix-blend-mode: multiply;
+}
+#header > h1{
+    display: inline-block;
+    vertical-align:middle;
+}
+
+#content{
+    background-color: #FCE59C;
+    height: 560px;
+    margin-left: 15px;
+    width: 900px;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.greenbox{
+    background-color: #103F43;
+    color: white;
+    padding:10px 10px 10px 10px;
+}
+
+
+#leftcolumn > h2 {
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+}
+
+#leftcolumn{
+    vertical-align: top;
+    display: inline-block;
+    height: 540px;
+    width: 200px;
+}
+
+#leftcolumn > p {
+display: inline-block;
+margin: 20px 5px 20px 10px;
+}
+
+.contentright{
+    display: inline-block;
+    width: 630px;
+    height: 580px;
+}
+.row{
+    display: inline-block;
+    vertical-align: top;
+    width: 630px;
+    height: 200px;
+}
+
+.p{
+    margin: 15px 5px 15px 10px;
+}
+
+.row1{
+    display: inline-block;
+    vertical-align: top;
+    height: 140px;
+    width: 150px;
+    margin-left: 37px;
+}
+
+.row2{
+    display: inline-block;
+    vertical-align: top;
+    height: 140px;
+    width: 255px;
+    margin-left: 37px;
+}
+
+.row3{
+    display: inline-block;
+    vertical-align: top;
+    height: 140px;
+    width: 570px;
+    margin-left: 37px;
+}
+#footer{
+    display: inline-block;
+    width: 900px;
+    margin: 15px 0px 15px 15px;
+    padding: 25px 15px 25px 25px;
+    background-color: #26B1AC;
+    text-align: center;
+}
+#pfooter{
+    font-size: 17px;
+}
+.lightblue{
+    color: #26B1AC;
+}
