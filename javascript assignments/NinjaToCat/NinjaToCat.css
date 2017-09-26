@@ -1,0 +1,10 @@
+* {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+.box{
+    height: auto;
+    width: 181px;
+    display: block;
+    margin-top: 10px;
+}
