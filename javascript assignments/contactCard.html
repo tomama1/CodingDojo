@@ -1,0 +1,85 @@
+<!doctype HTML>
+<html>
+<head>
+    <title> Contact Card </title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="contactCard.js"></script>
+    <style>
+    #wrapper {
+        margin: 0px auto;
+        padding: 0px auto;
+
+    }
+    h1 {
+        text-align: center;
+    }
+
+    #contactform{
+        width: 250px;
+        height: 300px;
+        display: inline-block;
+        text-align: center;
+        margin: 20px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
+        border: 1px solid black;
+    }
+    td {
+        padding: 10px 0px 10px 5px;
+    }
+    #thdes {
+        height: 20px;
+        vertical-align: top;
+        padding-top: 10px;
+    }
+    #contactlist {
+        display: inline-block;
+        height: auto;
+        width: 950px;
+        vertical-align: top;
+        margin-top: 10px;
+    }
+    .contact {
+        display: inline-block;
+        height: 150px;
+        vertical-align: top;
+        text-align: center;
+        border: 1px solid black;
+        width: 250px;
+        margin: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
+    }
+    .initialhidden {
+        display: none;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1> Contact Page</h1>
+        <div id="contactform">
+            <h2>Contact Form</h2>
+            <form>
+                <table>
+                    <tr>
+                        <th>First Name </th>
+                        <td><input type="text" name="firstname" id="fname"></td>
+                    </tr>
+                    <tr>
+                        <th>Last Name </th>
+                        <td><input type="text" name="lastname" id="lname"></td>
+                    </tr>
+                    <tr>
+                        <th id="thdes">Description</th>
+                        <td><textarea  name = "description" rows="6" cols="19" id="des"></textarea></td>
+                    </tr>
+                </table>
+                <input type="submit" value="Add User"id="submit1">
+            </form>          
+        </div>
+        <div id="contactlist"></div>
+    </div>
+</body>
+</html>
