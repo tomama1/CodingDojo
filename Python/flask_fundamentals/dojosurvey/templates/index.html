@@ -1,0 +1,47 @@
+<!doctype HTML>
+<html>
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}"> -->
+</head>
+
+<body>
+    <div>
+        <form action="/results" method="post">
+            <table>
+                <tr>
+                    <td>Your Name:</td>
+                    <td><input type="text" name="name" value="name"></td>
+                </tr>
+                <tr>
+                    <td>Dojo Location:</td>
+                    <td><select name="location">
+                        <option value="Burbank">Burbank</option>    
+                        <option value="Seattle">Seattle</option>    
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Favorite Language:</td>
+                    <td><select name="language">
+                        <option value="Python">Python</option>    
+                        <option value="Ruby">Ruby</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Comment (optional):</td>
+                </tr>
+                <tr>
+                    <td>
+                    <textarea name="comment" rows="10" cols="20">Enter Comment Here...</textarea> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit" name="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+
+
+</html>
