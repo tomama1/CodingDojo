@@ -1,0 +1,40 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    
+}
+#displaygold{
+    width: 150px;
+    height: auto;
+    padding: 2px;
+}
+
+.place{
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 10px 10px;
+
+}
+.row{
+    margin-left: 300px;
+    display: block;
+
+}
+p{
+    text-align: left;
+    padding-bottom: 30px;
+}
+.activities{
+border: 1px solid black;
+height: 300px;
+width: 800px;
+overflow: scroll;
+}
+#reset{
+    text-align: center;
+    margin: 0 auto;
+    padding: auto;
+}

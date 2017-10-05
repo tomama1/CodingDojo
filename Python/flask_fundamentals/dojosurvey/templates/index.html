@@ -9,8 +9,17 @@
         <form action="/results" method="post">
             <table>
                 <tr>
+                    {% with messages = get_flashed_messages(category_filter=["category1"]) %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <p>{{message}}</p>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+
                     <td>Your Name:</td>
-                    <td><input type="text" name="name" value="name"></td>
+                    <td><input type="text" name="name" ></td>
+                    
                 </tr>
                 <tr>
                     <td>Dojo Location:</td>
@@ -31,7 +40,7 @@
                 </tr>
                 <tr>
                     <td>
-                    <textarea name="comment" rows="10" cols="20">Enter Comment Here...</textarea> 
+                    <textarea name="comment" rows="10" cols="20" value="comment"></textarea> 
                     </td>
                 </tr>
                 <tr>
