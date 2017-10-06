@@ -1,0 +1,15 @@
+* {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+td{
+    color: red;
+}
+
+.black{
+    color: black;
+}
+h1{
+    text-align: center;
+}
