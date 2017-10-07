@@ -14,7 +14,6 @@ def index():
         session['cpu_num'] = randnum
     if session.get('player_guess')==None:
         session['player_guess'] = 0
-    print session['player_guess']
     return render_template('index.html')
 
 @app.route('/guess',methods=['POST'])

@@ -7,11 +7,9 @@ app.secret_key = 'codingDojo'
 @app.route('/')
 def index():
     if session.get('count')!= None :
-        print 'hello'
         session['count']+=1
     else:
         session['count'] = 0
-    print session['count']
     return render_template('index.html')
 
 @app.route('/two')
