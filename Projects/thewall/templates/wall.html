@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title> The Wall</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="style.css")}}">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2> CodingDojo Wall</h2>
+        <p> Welcome {{session['first_name']}} {{session['last_name']}}</p>
+        <a href = "{{ url_for('logout') }}" id="logoff">log off</a>
+    </div>
+    <div id="postmsg">
+        <h3>Post a message</h3>
+        <form action="/postmsg" method="POST">
+            <textarea class="msg" name="msg"> Message here </textarea>
+            <input type="submit" value="Post a message" class="msgsubmit">
+        </form>
+    </div>
+    <div id="content">
+        {% for message in all_messages %}
+        <div class="post">
+            <form action='/remove' method="POST"> <input type="hidden" name="cancel" value="{{message['id']}}"><input type="submit" value="X" class="cancel"></form>
+            <h4> {{message['first_name']}} {{message['last_name']}} - {{message['created_at']}}</h4>
+            <p> {{message['message']}}</p>
+            {% for comment in all_comments %}
+
+            <div class="comment">
+                <h5>{{comment['first_name']}} {{comment['last_name']}} - {{comment['created_at']}}</h5>
+                <p>{{comment['comment']}}</p>
+            </div>
+            {% endfor %}
+            <div class="postcomment">
+                <h4>Post a comment</h4>
+                <form action="/postcmt" method="POST">
+                    <input type="hidden" name="hiddenmsgid" value= "{{message['id']}}">
+                    <textarea name ="cmt" class="cmt"> Comment here </textarea>
+                    <input type="submit" value ="Post a comment" class="cmtsubmit">
+                </form>
+            </div>
+
+        </div>
+        {% endfor %}
+
+    </div>
+</body>
+
+</html>

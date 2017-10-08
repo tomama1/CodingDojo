@@ -34,3 +34,4 @@ def create():
     # Run query, with dictionary values injected into the query.
     mysql.query_db(query, data)
     return redirect('/')
+app.run(debug=True)

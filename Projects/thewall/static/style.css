@@ -1,0 +1,77 @@
+
+* {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+#header{
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 1px solid black;
+    padding: 10px 5px 10px 30px;
+}
+#header > h2{
+    display: inline-block;
+}
+#header > p{
+    display: inline-block;
+    margin-left: 450px;
+    margin-right: 300px;
+}
+#header > a{
+    display: inline-block;
+    
+}
+#postmsg {
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+#postmsg > h3{
+    padding: 10px 10px 10px 0px;
+}
+.msg {
+    height: 100px;
+    width: 1050px;
+}
+.msgsubmit{
+    margin-left: 900px;
+    display: block;
+    padding: 5px 5px 5px 5px;
+    font-size: 30px;
+}
+#content{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+}
+
+.post > h4{
+    padding: 5px 5px 5px 0px;
+    font-size: 18px;
+}
+.post > p{
+    padding-left: 7.5px;
+}
+.comment {
+    padding: 10px 10px 10px 20px;
+}
+.comment > p{
+    padding: 5px 5px 5px 5px;
+    font-size: 13px;
+}
+.postcomment {
+    padding-left: 20px;
+    
+}
+.cmt{
+    width: 1035px;
+    height: 70px;
+}
+.cmtsubmit{
+    margin-left: 900px;
+    font-size: 30px;
+}
+.cancel{
+    float:right;
+    top:0;
+    right:0;
+}
