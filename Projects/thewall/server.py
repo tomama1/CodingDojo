@@ -1,7 +1,9 @@
 from flask import Flask, request, redirect, render_template, session, flash
 from mysqlconnection import MySQLConnector
+from dateutil import parser
 import re
 import hashlib
+import datetime
 
 PASSWORD_REGEX = re.compile(r'^\d.*[A-Z]|[A-Z].*\d')
 app = Flask(__name__)
@@ -105,11 +107,17 @@ def postcmt():
 
 @app.route('/remove', methods=["POST"])
 def removemsg():
-    query = "DELETE FROM messages WHERE id = :message_id"
-    data = {'message_id' : request.form['cancel']}
-    mysql.query_db(query, data)
-    query2 = "DELETE FROM comments WHERE message_id = :message_id"
-    data2 = {'message_id' : request.form['cancel']}
-    mysql.query_db(query2, data2)
+    date = request.form['hiddendate']
+    new_date = parser.parse(date)
+    currdate = datetime.datetime.now()
+    diffdate = new_date - currdate
+    diffmin = int(diffdate.total_seconds()/60)*-1
+    if diffmin <30 :
+        query = "DELETE FROM messages WHERE id = :message_id"
+        data = {'message_id' : request.form['cancel']}
+        mysql.query_db(query, data)
+        query2 = "DELETE FROM comments WHERE message_id = :message_id"
+        data2 = {'message_id' : request.form['cancel']}
+        mysql.query_db(query2, data2)
     return redirect('/wall')
 app.run(debug=True)

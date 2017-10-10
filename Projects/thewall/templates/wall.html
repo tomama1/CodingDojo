@@ -22,7 +22,7 @@
     <div id="content">
         {% for message in all_messages %}
         <div class="post">
-            <form action='/remove' method="POST"> <input type="hidden" name="cancel" value="{{message['id']}}"><input type="submit" value="X" class="cancel"></form>
+            <form action='/remove' method="POST"> <input type="hidden" name="cancel" value="{{message['id']}}"><input type="hidden" name="hiddendate" value= "{{message['created_at']}}"><input type="submit" value="X" class="cancel"></form>
             <h4> {{message['first_name']}} {{message['last_name']}} - {{message['created_at']}}</h4>
             <p> {{message['message']}}</p>
             {% for comment in all_comments %}
@@ -35,6 +35,7 @@
             <div class="postcomment">
                 <h4>Post a comment</h4>
                 <form action="/postcmt" method="POST">
+
                     <input type="hidden" name="hiddenmsgid" value= "{{message['id']}}">
                     <textarea name ="cmt" class="cmt"> Comment here </textarea>
                     <input type="submit" value ="Post a comment" class="cmtsubmit">
