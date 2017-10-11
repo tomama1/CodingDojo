@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+</head>
+<body>
+    
+    <h1> Thank you for your business!</h1>
+    <h3> We charged your credit card for ${{request.session.curritem}}</h3>
+    <h3> You have ordered {{request.session.shoppingcart}} items so far and spent ${{request.session.totalcost}} with Amadon.com</h3>
+    <form action='/goback'>
+        <input type="submit" value="Go Back">
+    </form>
+    
+</body>
+</html>

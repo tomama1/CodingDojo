@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Session Words</title>
+    <style>
+        body{
+            margin: 0px ;
+            padding: 0px ;
+        }
+        .column{
+            width: 49%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+        .blue{
+            color: blue;
+        }
+        .big{
+            font-size: 30px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .small{
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="column" id="leftcolumn">
+        <h2> Add a new word</h2>
+    <form action="/process" method="POST">
+        {% csrf_token %}
+        <input type="text" name = "word"><br>
+        <label for="color"> What Color?</label><br>
+        <input type="radio" name = "color" value="red">Red<br>
+        <input type="radio" name = "color" value="green">Green<br>
+        <input type="radio" name = "color" value="blue">Blue<br>
+        <input type="hidden" name="size" value="small">
+        <input type="checkbox" name="size" value="big"> show in BIG fonts!<br>
+        <input type="submit" value="Add to Session">
+    </form>
+    </div>
+    <div class="column" id="rightcolumn">
+        <form action="/clear">{% csrf_token %}<input type="submit" value="Clear Session" style="float: right;"></form>
+        <h1> Session </h1>
+        <table >
+        {% for message in request.session.messages %}
+            <tr><td class="{{message.1}} {{message.2}}"> {{ message.0 }}</td><td> - {{message.3}}</td></tr>
+        {% endfor %}    
+        </table>
+    </div>
+
+
+
+</body>
+</html>

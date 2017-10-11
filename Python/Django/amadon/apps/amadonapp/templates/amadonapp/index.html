@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amadon</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1> Amadon Store!</h1>
+        <table>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Actions</th>
+            <tr>
+                <td>Dojo T shirt</td>
+                <td> $19.99</td>
+                <td> 
+                    <form action="/tshirtprocess" method="POST">
+                        {% csrf_token %}
+                        <select name="tshirtquantity">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <input type='hidden' name='tshirt' value='1999'>
+                        <input type="submit" value="Buy!">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Dojo Sweater</td>
+                <td> $29.99</td>
+                <td> 
+                    <form action="/sweaterprocess" method="POST">
+                        {% csrf_token %}
+                        <select name="sweaterquantity">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <input type='hidden' name='sweater' value='2999'>
+                        <input type="submit" name="submit" value="Buy!">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Dojo Cup</td>
+                <td> $4.99</td>
+                <td> 
+                    <form action="/cupprocess" method="POST">
+                        {% csrf_token %}
+                        <select name="cupquantity">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <input type='hidden' name='cup' value='499'>
+                        <input type="submit" name="submit" value="Buy!">
+                    </form>
+                </td>
+            </tr>
+
+
+
+        </table>
+
+
+    </div>
+    
+</body>
+</html>
