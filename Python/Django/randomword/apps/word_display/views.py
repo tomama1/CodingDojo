@@ -8,6 +8,5 @@ def index(request):
     else:
         request.session['count'] = request.session['count'] + 1
     randomword = str(get_random_string(length=14))
-    print randomword
     tempdict = {'randomword': randomword}
     return render(request, 'word_display/index.html', tempdict)

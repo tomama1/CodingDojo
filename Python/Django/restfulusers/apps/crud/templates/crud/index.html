@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+</head>
+<body>
+    <h1> Semi-Restful Users </h1>
+    <table>
+        <th>id </th>
+        <th>Full Name</th>
+        <th> Email </th>
+        <th>Created At</th>
+        <th>Actions</th>
+            {% for user in users %}
+            <tr>
+                <td>{{user.id}}</td>
+                <td>{{user.firstname}} {{user.lastname}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.created_at}}</td>
+                <td>
+                    <input type="hidden" value="{{user.id}}" name="hiddenid">
+                    <a href="/show/{{user.id}}">Show</a>
+                    <a href="/edit/{{user.id}}">Edit</a>
+                    <a href="/delete/{{user.id}}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+
+    </table>
+    <br>
+    <a href="/add">Add a new user</a>
+</body>
+</html>

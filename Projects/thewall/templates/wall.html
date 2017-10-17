@@ -26,11 +26,12 @@
             <h4> {{message['first_name']}} {{message['last_name']}} - {{message['created_at']}}</h4>
             <p> {{message['message']}}</p>
             {% for comment in all_comments %}
-
+                {% if comment['message_id']== message['id'] %}
             <div class="comment">
                 <h5>{{comment['first_name']}} {{comment['last_name']}} - {{comment['created_at']}}</h5>
                 <p>{{comment['comment']}}</p>
             </div>
+                {% endif %}
             {% endfor %}
             <div class="postcomment">
                 <h4>Post a comment</h4>

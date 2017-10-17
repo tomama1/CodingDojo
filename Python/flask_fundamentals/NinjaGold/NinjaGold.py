@@ -12,10 +12,7 @@ def index():
 
 @app.route('/process', methods=["POST"])
 def process():
-    if session.get('activities')== None:
-        session['activities'] = []
-    if session.get('gold')==None:
-        session['gold'] = 0
+
 
     if request.form['building']=='farm':
         num = random.randrange(10,21)

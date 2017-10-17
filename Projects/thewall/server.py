@@ -73,6 +73,8 @@ def register():
                 'hashpassword': hash_object.hexdigest()
                 }
         mysql.query_db(query, data)
+        session['first_name'] = request.form['firstname']
+        session['last_name'] = request.form['lastname']
         user_id = mysql.query_db("SELECT id FROM users WHERE email = :email",{'email': request.form['email']})
         session['user_id'] = user_id[0]['id']
         return redirect('/wall')
@@ -80,8 +82,8 @@ def register():
 
 @app.route('/wall')
 def wall():
-    messages = mysql.query_db("SELECT messages.id, messages.user_id, users.first_name, users.last_name, message, messages.created_at FROM messages JOIN users ON users.id = messages.user_id ORDER BY messages.created_at ASC")
-    comments = mysql.query_db("SELECT comments.id, comment, users.first_name, users.last_name, comments.created_at FROM comments JOIN messages ON messages.id = comments.message_id JOIN users ON users.id = comments.user_id ORDER BY comments.created_at ASC")
+    messages = mysql.query_db("SELECT messages.id, messages.user_id, users.first_name, users.last_name, message, messages.created_at FROM messages JOIN users ON users.id = messages.user_id ORDER BY messages.created_at DESC")
+    comments = mysql.query_db("SELECT comments.id, comment, users.first_name, users.last_name, comments.created_at, comments.message_id FROM comments JOIN messages ON messages.id = comments.message_id JOIN users ON users.id = comments.user_id ORDER BY comments.created_at ASC")
     return render_template('wall.html', all_messages = messages, all_comments = comments)
 
 @app.route('/postmsg', methods=["POST"])
