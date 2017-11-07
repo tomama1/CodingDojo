@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style>
+    div {
+        border: 1px solid black;
+        height: 1200px;
+        width: 400px;
+    }
+    img {
+        display: block;
+    }
+    </style>
+
+    <script>
+
+        $(document).ready(function(){
+        var headimages = [
+            $('#img1').attr('data-alt'),
+            $('#img2').attr('data-alt'),
+        ];
+        var current = 0;
+
+
+
+        var bodyimages = [
+            $('#img10').attr('data-alt'),
+            $('#img11').attr('data-alt'),
+            $('#img12').attr('data-alt'),
+            $('#img13').attr('data-alt'),
+        ];
+        var current1 = 0;
+
+
+        $('#switchheads').click(function(){
+
+            if ( current >= headimages.length){
+                current = 0;
+            }
+            $('#head').attr('src', headimages[current]);
+            current+=1;
+            });
+
+
+        $('#switchbody').click(function(){
+
+            if ( current1 >= bodyimages.length){
+                current1 = 0;
+            }
+            $('#body').attr('src', bodyimages[current1]);
+            current1+=1;
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+    <h1> Shop Here</h1>
+    <button name="switchheads" id="switchheads">switchheads</button>
+    <button name="switchbody" id="switchbody">switchbody</button>
+    <div>
+        {% load static %}    
+        <meta id="img1" data-alt="{% static 'shop/head2.png' %}">
+        <meta id="img2" data-alt="{% static 'shop/head.png' %}">
+        <meta id="img10" data-alt="{% static 'shop/body.png' %}">
+        <meta id="img11" data-alt="{% static 'shop/body2.png' %}">
+        <meta id="img12" data-alt="{% static 'shop/body3.png' %}">
+        <meta id="img13" data-alt="{% static 'shop/body4.png' %}">
+        <img src="{% static 'shop/head.png' %}" data-alt="{% static 'shop/head2.png' %}" id="head">
+        <img src="{% static 'shop/body.png' %}" data-alt="{% static 'shop/body.png' %}" id="body">
+        <img src="{% static 'shop/legs.png' %}">
+    </div>
+</body>
+
+</html>

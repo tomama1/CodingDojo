@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper{
+    width: 1000px;
+    height: 1010px;
+    background-color: rgb(6,33,52);
+}
+#header{
+    padding: 15px 15px 15px 15px;
+    display: inline-block;
+    color: white;
+}
+#header > h1{
+    display: inline-block;
+}
+#firstop{
+    margin-left: 130px;
+    color: rgb(39,86,119);
+}
+.menubar{
+    margin-left: 60px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+#consulting{
+    color: rgb(27,153,232);
+}
+#poster{
+    display: inline-block;
+    background-color: white;
+    width: 970px;
+    margin: 0px 15px 15px 15px;
+}
+#mainpic{
+    display: block;
+    width: 940px;
+    margin: 15px 15px 15px 15px;
+}
+.wrenchbox{
+    display: inline-block;
+    vertical-align: top;
+    width: 287px;
+    height: 220px;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 5px 15px 15px;
+    color: white;
+    font-size: 12px;
+    background-color: #0369A3;
+}
+.wrench{
+    display: inline-block;
+    vertical-align: top;
+    height: 35px;
+    margin: 5px 1px 0px 5px;
+}
+.wrenchbox > h2 {
+    display: inline-block;
+    margin: 5px 0px 0px 2px;
+    font-size: 26px;
+    font-weight: normal;
+}
+.wrenchbox > p {
+    padding: 10px 10px 10px 10px;
+}
+.button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 130px;
+    margin: 45px 0px 0px 10px;
+    background: linear-gradient(to bottom, rgb(72,173,236)0%,rgb(72,173,236) 50%,rgb(72,173,236) 50%,rgb(26,147,223) 50%,rgb(26,147,223) 100%); /* W3C */
+}
+#world {
+    display: inline-block;
+    width: 595px;
+    margin-left: 15px;
+}
+#building {
+    display: inline-block;
+    height: 150px;
+    margin: 0px 15px 0px 0px;
+}
+.bottomtitle {
+    font-weight: normal;
+    margin: 10px 0px 10px 0px;
+}
+#textright {
+    display: inline-block;
+    width: 290px;
+    vertical-align: top;
+    font-size: 12px;
+}
+#textright > p {
+    margin: 0px 0px 10px 0px;
+}
+#learn {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(91,138,172);
+}
+#testimonialbox {
+    display: inline-block;
+    width: 300px;
+    padding: 0px 0px 0px 15px;
+    vertical-align: top;
+    margin-left: 17px;
+}
+#testimonialbox > p {
+    padding: 15px 15px 40px 15px;
+    font-style: italic;
+    background-color: rgb(218,237,255);
+}
+#speechbubble {
+    height: 0px;
+    width: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(218,237,255);
+    margin-left: 40px;
+}
+#testimonialbox > h6 {
+    margin: 10px 0px 8px 0px;
+}
+#footer {
+    width: 100%;
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    margin-top: 15px;
+    background-color: #D9EDFD;
+    
+}
+.footerbar{
+    padding: 0px 13px 0px 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #347397;
+}
+#footerhome{
+    color: #A8D3EE;
+}

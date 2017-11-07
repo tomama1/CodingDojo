@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Courses</title>
 </head>
 <body>
+
+    <form method="post" action="/search">
+    {% csrf_token %}
+    <div id="searchbar">
+        <p> Search: </p><input type="text" name="search">
+    </div>
+    </form>
+    <div id="displaysearchresults">
+    </div>
+    <script>
+        $('#searchbar').keyup(function(){
+            console.log('came here')
+            $.ajax({
+                url: '/search',
+                method: 'post',
+                data: $(this).parent().serialize(),
+                success: function(serverResponse){
+                    $('#displaysearchresults').html(serverResponse)
+                }
+            });
+        });
+        
+    </script>
 <form method="POST" action="/add">
     {% csrf_token %}
     <table>
@@ -21,6 +46,7 @@
     </table>
     <input type="submit" value="Add Course">
 </form>
+
 
 <table>
     <tr>
@@ -51,4 +77,5 @@
 
 </table>
 </body>
+
 </html>

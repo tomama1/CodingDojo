@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from .models import Course, Description
 
 # Create your views here.
@@ -28,3 +28,8 @@ def delete_process(request, id):
 
 def goback(request):
     return redirect('/')
+
+def search(request):
+    courses = Course.objects.filter(name__startswith=request.POST['search'])
+    print courses
+    return render(request, "crudcourse/ajax.html", {"courses":courses})
