@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17B48" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pokemon Hollow.ttf">
+            <string>PokemonHollowNormal</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="pokeGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pokemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHu-7q-3Wc">
+                                <rect key="frame" x="16" y="95" width="343" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PokemonHollowNormal" family="Pokemon Hollow" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.89995120319999999" blue="0.1388325091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X85-J6-hE7">
+                                <rect key="frame" x="114" y="393" width="147" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YIB-UR-vfA" kind="presentation" id="HCf-7T-g2W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Town-->
+        <scene sceneID="IXk-fZ-uXC">
+            <objects>
+                <viewController id="SG7-M5-qVC" customClass="TownViewController" customModule="pokeGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PzD-O7-NC8"/>
+                        <viewControllerLayoutGuide type="bottom" id="nT9-Kh-aor"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MEw-8H-hNr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="33U-TZ-vLZ">
+                                <rect key="frame" x="0.0" y="454" width="375" height="213"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUl-wM-BzX">
+                                        <rect key="frame" x="153" y="21" width="60" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="⬆️">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="upButtonPressed:" destination="SG7-M5-qVC" eventType="touchUpInside" id="Oxf-gF-J5y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it7-4M-6qo">
+                                        <rect key="frame" x="184" y="54" width="62" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="➡️">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rightButtonPressed:" destination="SG7-M5-qVC" eventType="touchUpInside" id="HU3-6k-CfD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxO-Xn-QYA">
+                                        <rect key="frame" x="123" y="57" width="53" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="⬅️">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="leftButtonPressed:" destination="SG7-M5-qVC" eventType="touchUpInside" id="Eqd-WZ-9e3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwl-UU-R9O">
+                                        <rect key="frame" x="151" y="84" width="64" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="⬇️">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="downButtonPressed:" destination="SG7-M5-qVC" eventType="touchUpInside" id="zvc-13-noa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1505734296" green="0.22951358790000001" blue="0.32579744170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="sAz-Ir-qmJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYa-iV-IAb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="165"/>
+                                <color key="backgroundColor" red="0.1483684913225628" green="0.56567762305699487" blue="0.15191172769487776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aYa-iV-IAb" secondAttribute="height" multiplier="25:11" id="vrc-Oi-VT4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpu-zH-LQe">
+                                <rect key="frame" x="0.0" y="185" width="375" height="269"/>
+                                <color key="backgroundColor" red="0.25410181502619023" green="0.81057723445595853" blue="0.20220305839858047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mpu-zH-LQe" secondAttribute="height" multiplier="375:269" id="V7u-VY-6oR"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="playerimg" highlightedImage="playerimg" translatesAutoresizingMaskIntoConstraints="NO" id="IQw-3D-WrR">
+                                <rect key="frame" x="172" y="318" width="30" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aYa-iV-IAb" secondAttribute="trailing" id="10F-8M-3JV"/>
+                            <constraint firstAttribute="trailing" secondItem="33U-TZ-vLZ" secondAttribute="trailing" id="48h-Tl-rMc"/>
+                            <constraint firstItem="mpu-zH-LQe" firstAttribute="leading" secondItem="MEw-8H-hNr" secondAttribute="leading" id="K1u-xy-q3V"/>
+                            <constraint firstItem="aYa-iV-IAb" firstAttribute="top" secondItem="PzD-O7-NC8" secondAttribute="bottom" id="avd-EX-bhi"/>
+                            <constraint firstAttribute="trailing" secondItem="mpu-zH-LQe" secondAttribute="trailing" id="gcB-9z-RA6"/>
+                            <constraint firstItem="aYa-iV-IAb" firstAttribute="leading" secondItem="MEw-8H-hNr" secondAttribute="leading" id="jnm-GW-hkR"/>
+                            <constraint firstItem="mpu-zH-LQe" firstAttribute="top" secondItem="aYa-iV-IAb" secondAttribute="bottom" id="lM5-y6-orf"/>
+                            <constraint firstItem="33U-TZ-vLZ" firstAttribute="top" secondItem="mpu-zH-LQe" secondAttribute="bottom" id="nvg-lI-MYc"/>
+                            <constraint firstItem="33U-TZ-vLZ" firstAttribute="leading" secondItem="MEw-8H-hNr" secondAttribute="leading" id="sQP-v3-gkN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Town" id="k96-pC-gUb">
+                        <barButtonItem key="rightBarButtonItem" title="Quit" id="o40-oR-yNd"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="grassView" destination="aYa-iV-IAb" id="lmH-B6-hJO"/>
+                        <outlet property="playerimg" destination="IQw-3D-WrR" id="0Ci-9U-cFq"/>
+                        <outlet property="roadView" destination="mpu-zH-LQe" id="AQQ-zd-THm"/>
+                        <segue destination="b7k-bg-0aV" kind="presentation" identifier="encounterSegue" id="Mep-9G-pZh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N77-ft-Frg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="123.68815592203899"/>
+        </scene>
+        <!--Encounter View Controller-->
+        <scene sceneID="LO8-oD-B6o">
+            <objects>
+                <viewController id="b7k-bg-0aV" customClass="EncounterViewController" customModule="pokeGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SBg-67-JGm"/>
+                        <viewControllerLayoutGuide type="bottom" id="DbO-kV-meb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wjj-j8-PvI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pokemon Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMG-Ex-gve">
+                                <rect key="frame" x="16" y="28" width="166" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":L #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M7-Iv-Yny">
+                                <rect key="frame" x="32" y="47" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HP: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEp-tm-q4v">
+                                <rect key="frame" x="16" y="65" width="23" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sFX-Ud-oEY">
+                                <rect key="frame" x="42" y="72" width="105" height="6"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="playerimg" translatesAutoresizingMaskIntoConstraints="NO" id="1SQ-pV-DIg">
+                                <rect key="frame" x="190" y="28" width="169" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pokemon Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cd7-yY-jzg">
+                                <rect key="frame" x="193" y="234" width="166" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":L #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYv-NC-cCq">
+                                <rect key="frame" x="209" y="264" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HP: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2q-6O-kCP">
+                                <rect key="frame" x="193" y="284" width="23" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJ5-wK-Gtf">
+                                <rect key="frame" x="222" y="291" width="105" height="6"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g36-J3-IZp">
+                                <rect key="frame" x="0.0" y="333" width="375" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Iw-hT-CU2">
+                                        <rect key="frame" x="111" y="190" width="154" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Run">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="runButtonPressed:" destination="b7k-bg-0aV" eventType="touchUpInside" id="XC6-ZA-Ssa"/>
+                                            <segue destination="SG7-M5-qVC" kind="presentation" id="QR9-tN-sWN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujW-Vr-FqE">
+                                        <rect key="frame" x="110" y="68" width="155" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Fight">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fightButtonPressed:" destination="b7k-bg-0aV" eventType="touchUpInside" id="Xtl-Kj-EXg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="playerimg" translatesAutoresizingMaskIntoConstraints="NO" id="4bP-GF-062">
+                                <rect key="frame" x="29" y="224" width="131" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mypokemonHealth" destination="eJ5-wK-Gtf" id="1PK-xd-GaU"/>
+                        <outlet property="mypokemonImg" destination="4bP-GF-062" id="F7t-dx-GlO"/>
+                        <outlet property="mypokemonLevel" destination="SYv-NC-cCq" id="T3d-ho-4Gf"/>
+                        <outlet property="mypokemonTitle" destination="Cd7-yY-jzg" id="eC2-4T-zu3"/>
+                        <outlet property="wildpokemonHealth" destination="sFX-Ud-oEY" id="m2t-JE-tOF"/>
+                        <outlet property="wildpokemonImg" destination="1SQ-pV-DIg" id="NdH-Mx-dAa"/>
+                        <outlet property="wildpokemonLevel" destination="4M7-Iv-Yny" id="3W0-Eh-3d0"/>
+                        <outlet property="wildpokemonTitle" destination="aMG-Ex-gve" id="DOO-cL-sq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DwD-5z-dyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2821.5999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Oic-nk-pXT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YIB-UR-vfA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ezG-4D-qWO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SG7-M5-qVC" kind="relationship" relationship="rootViewController" id="uWE-Cx-t7Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEj-in-wRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.79999999999995" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="playerimg" width="12" height="12"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="QR9-tN-sWN"/>
+    </inferredMetricsTieBreakers>
+</document>

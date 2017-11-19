@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		954390921FBF61A6000E1D55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954390911FBF61A6000E1D55 /* AppDelegate.swift */; };
+		954390971FBF61A6000E1D55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954390951FBF61A6000E1D55 /* Main.storyboard */; };
+		9543909A1FBF61A6000E1D55 /* beltexam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 954390981FBF61A6000E1D55 /* beltexam.xcdatamodeld */; };
+		9543909C1FBF61A6000E1D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9543909B1FBF61A6000E1D55 /* Assets.xcassets */; };
+		9543909F1FBF61A6000E1D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9543909D1FBF61A6000E1D55 /* LaunchScreen.storyboard */; };
+		954390AA1FBF61A7000E1D55 /* beltexamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954390A91FBF61A7000E1D55 /* beltexamTests.swift */; };
+		954390B51FBF61A7000E1D55 /* beltexamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954390B41FBF61A7000E1D55 /* beltexamUITests.swift */; };
+		954390C31FBF6285000E1D55 /* unBeastedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954390C21FBF6285000E1D55 /* unBeastedTableViewController.swift */; };
+		954390C51FBF643B000E1D55 /* unBeastedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954390C41FBF643B000E1D55 /* unBeastedCell.swift */; };
+		954390C71FBF649C000E1D55 /* addeditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954390C61FBF649C000E1D55 /* addeditViewController.swift */; };
+		954390C91FBF72DD000E1D55 /* BeastedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954390C81FBF72DD000E1D55 /* BeastedTableViewController.swift */; };
+		954390CB1FBF741F000E1D55 /* BeastedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954390CA1FBF741F000E1D55 /* BeastedCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		954390A61FBF61A7000E1D55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 954390861FBF61A6000E1D55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9543908D1FBF61A6000E1D55;
+			remoteInfo = beltexam;
+		};
+		954390B11FBF61A7000E1D55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 954390861FBF61A6000E1D55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9543908D1FBF61A6000E1D55;
+			remoteInfo = beltexam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9543908E1FBF61A6000E1D55 /* beltexam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beltexam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		954390911FBF61A6000E1D55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		954390961FBF61A6000E1D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		954390991FBF61A6000E1D55 /* beltexam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = beltexam.xcdatamodel; sourceTree = "<group>"; };
+		9543909B1FBF61A6000E1D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9543909E1FBF61A6000E1D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		954390A01FBF61A6000E1D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954390A51FBF61A7000E1D55 /* beltexamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beltexamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		954390A91FBF61A7000E1D55 /* beltexamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beltexamTests.swift; sourceTree = "<group>"; };
+		954390AB1FBF61A7000E1D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954390B01FBF61A7000E1D55 /* beltexamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beltexamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		954390B41FBF61A7000E1D55 /* beltexamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beltexamUITests.swift; sourceTree = "<group>"; };
+		954390B61FBF61A7000E1D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954390C21FBF6285000E1D55 /* unBeastedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = unBeastedTableViewController.swift; path = ../unBeastedTableViewController.swift; sourceTree = "<group>"; };
+		954390C41FBF643B000E1D55 /* unBeastedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unBeastedCell.swift; sourceTree = "<group>"; };
+		954390C61FBF649C000E1D55 /* addeditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addeditViewController.swift; sourceTree = "<group>"; };
+		954390C81FBF72DD000E1D55 /* BeastedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeastedTableViewController.swift; sourceTree = "<group>"; };
+		954390CA1FBF741F000E1D55 /* BeastedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeastedCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9543908B1FBF61A6000E1D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954390A21FBF61A7000E1D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954390AD1FBF61A7000E1D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		954390851FBF61A6000E1D55 = {
+			isa = PBXGroup;
+			children = (
+				954390901FBF61A6000E1D55 /* beltexam */,
+				954390A81FBF61A7000E1D55 /* beltexamTests */,
+				954390B31FBF61A7000E1D55 /* beltexamUITests */,
+				9543908F1FBF61A6000E1D55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9543908F1FBF61A6000E1D55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9543908E1FBF61A6000E1D55 /* beltexam.app */,
+				954390A51FBF61A7000E1D55 /* beltexamTests.xctest */,
+				954390B01FBF61A7000E1D55 /* beltexamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		954390901FBF61A6000E1D55 /* beltexam */ = {
+			isa = PBXGroup;
+			children = (
+				954390C21FBF6285000E1D55 /* unBeastedTableViewController.swift */,
+				954390C81FBF72DD000E1D55 /* BeastedTableViewController.swift */,
+				954390C61FBF649C000E1D55 /* addeditViewController.swift */,
+				954390911FBF61A6000E1D55 /* AppDelegate.swift */,
+				954390951FBF61A6000E1D55 /* Main.storyboard */,
+				954390CA1FBF741F000E1D55 /* BeastedCell.swift */,
+				954390C41FBF643B000E1D55 /* unBeastedCell.swift */,
+				9543909B1FBF61A6000E1D55 /* Assets.xcassets */,
+				9543909D1FBF61A6000E1D55 /* LaunchScreen.storyboard */,
+				954390A01FBF61A6000E1D55 /* Info.plist */,
+				954390981FBF61A6000E1D55 /* beltexam.xcdatamodeld */,
+			);
+			path = beltexam;
+			sourceTree = "<group>";
+		};
+		954390A81FBF61A7000E1D55 /* beltexamTests */ = {
+			isa = PBXGroup;
+			children = (
+				954390A91FBF61A7000E1D55 /* beltexamTests.swift */,
+				954390AB1FBF61A7000E1D55 /* Info.plist */,
+			);
+			path = beltexamTests;
+			sourceTree = "<group>";
+		};
+		954390B31FBF61A7000E1D55 /* beltexamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				954390B41FBF61A7000E1D55 /* beltexamUITests.swift */,
+				954390B61FBF61A7000E1D55 /* Info.plist */,
+			);
+			path = beltexamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9543908D1FBF61A6000E1D55 /* beltexam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954390B91FBF61A7000E1D55 /* Build configuration list for PBXNativeTarget "beltexam" */;
+			buildPhases = (
+				9543908A1FBF61A6000E1D55 /* Sources */,
+				9543908B1FBF61A6000E1D55 /* Frameworks */,
+				9543908C1FBF61A6000E1D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = beltexam;
+			productName = beltexam;
+			productReference = 9543908E1FBF61A6000E1D55 /* beltexam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		954390A41FBF61A7000E1D55 /* beltexamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954390BC1FBF61A7000E1D55 /* Build configuration list for PBXNativeTarget "beltexamTests" */;
+			buildPhases = (
+				954390A11FBF61A7000E1D55 /* Sources */,
+				954390A21FBF61A7000E1D55 /* Frameworks */,
+				954390A31FBF61A7000E1D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				954390A71FBF61A7000E1D55 /* PBXTargetDependency */,
+			);
+			name = beltexamTests;
+			productName = beltexamTests;
+			productReference = 954390A51FBF61A7000E1D55 /* beltexamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		954390AF1FBF61A7000E1D55 /* beltexamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954390BF1FBF61A7000E1D55 /* Build configuration list for PBXNativeTarget "beltexamUITests" */;
+			buildPhases = (
+				954390AC1FBF61A7000E1D55 /* Sources */,
+				954390AD1FBF61A7000E1D55 /* Frameworks */,
+				954390AE1FBF61A7000E1D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				954390B21FBF61A7000E1D55 /* PBXTargetDependency */,
+			);
+			name = beltexamUITests;
+			productName = beltexamUITests;
+			productReference = 954390B01FBF61A7000E1D55 /* beltexamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		954390861FBF61A6000E1D55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "M a t t h e w";
+				TargetAttributes = {
+					9543908D1FBF61A6000E1D55 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SF5MC74SH2;
+						ProvisioningStyle = Automatic;
+					};
+					954390A41FBF61A7000E1D55 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SF5MC74SH2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9543908D1FBF61A6000E1D55;
+					};
+					954390AF1FBF61A7000E1D55 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SF5MC74SH2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9543908D1FBF61A6000E1D55;
+					};
+				};
+			};
+			buildConfigurationList = 954390891FBF61A6000E1D55 /* Build configuration list for PBXProject "beltexam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 954390851FBF61A6000E1D55;
+			productRefGroup = 9543908F1FBF61A6000E1D55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9543908D1FBF61A6000E1D55 /* beltexam */,
+				954390A41FBF61A7000E1D55 /* beltexamTests */,
+				954390AF1FBF61A7000E1D55 /* beltexamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9543908C1FBF61A6000E1D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9543909F1FBF61A6000E1D55 /* LaunchScreen.storyboard in Resources */,
+				9543909C1FBF61A6000E1D55 /* Assets.xcassets in Resources */,
+				954390971FBF61A6000E1D55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954390A31FBF61A7000E1D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954390AE1FBF61A7000E1D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9543908A1FBF61A6000E1D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9543909A1FBF61A6000E1D55 /* beltexam.xcdatamodeld in Sources */,
+				954390C51FBF643B000E1D55 /* unBeastedCell.swift in Sources */,
+				954390C91FBF72DD000E1D55 /* BeastedTableViewController.swift in Sources */,
+				954390CB1FBF741F000E1D55 /* BeastedCell.swift in Sources */,
+				954390C31FBF6285000E1D55 /* unBeastedTableViewController.swift in Sources */,
+				954390C71FBF649C000E1D55 /* addeditViewController.swift in Sources */,
+				954390921FBF61A6000E1D55 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954390A11FBF61A7000E1D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954390AA1FBF61A7000E1D55 /* beltexamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954390AC1FBF61A7000E1D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954390B51FBF61A7000E1D55 /* beltexamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		954390A71FBF61A7000E1D55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9543908D1FBF61A6000E1D55 /* beltexam */;
+			targetProxy = 954390A61FBF61A7000E1D55 /* PBXContainerItemProxy */;
+		};
+		954390B21FBF61A7000E1D55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9543908D1FBF61A6000E1D55 /* beltexam */;
+			targetProxy = 954390B11FBF61A7000E1D55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		954390951FBF61A6000E1D55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				954390961FBF61A6000E1D55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9543909D1FBF61A6000E1D55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9543909E1FBF61A6000E1D55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		954390B71FBF61A7000E1D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		954390B81FBF61A7000E1D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		954390BA1FBF61A7000E1D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SF5MC74SH2;
+				INFOPLIST_FILE = beltexam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.beltexam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		954390BB1FBF61A7000E1D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SF5MC74SH2;
+				INFOPLIST_FILE = beltexam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.beltexam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		954390BD1FBF61A7000E1D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SF5MC74SH2;
+				INFOPLIST_FILE = beltexamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.beltexamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/beltexam.app/beltexam";
+			};
+			name = Debug;
+		};
+		954390BE1FBF61A7000E1D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SF5MC74SH2;
+				INFOPLIST_FILE = beltexamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.beltexamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/beltexam.app/beltexam";
+			};
+			name = Release;
+		};
+		954390C01FBF61A7000E1D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SF5MC74SH2;
+				INFOPLIST_FILE = beltexamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.beltexamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = beltexam;
+			};
+			name = Debug;
+		};
+		954390C11FBF61A7000E1D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SF5MC74SH2;
+				INFOPLIST_FILE = beltexamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.beltexamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = beltexam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		954390891FBF61A6000E1D55 /* Build configuration list for PBXProject "beltexam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954390B71FBF61A7000E1D55 /* Debug */,
+				954390B81FBF61A7000E1D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		954390B91FBF61A7000E1D55 /* Build configuration list for PBXNativeTarget "beltexam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954390BA1FBF61A7000E1D55 /* Debug */,
+				954390BB1FBF61A7000E1D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		954390BC1FBF61A7000E1D55 /* Build configuration list for PBXNativeTarget "beltexamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954390BD1FBF61A7000E1D55 /* Debug */,
+				954390BE1FBF61A7000E1D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		954390BF1FBF61A7000E1D55 /* Build configuration list for PBXNativeTarget "beltexamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954390C01FBF61A7000E1D55 /* Debug */,
+				954390C11FBF61A7000E1D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		954390981FBF61A6000E1D55 /* beltexam.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				954390991FBF61A6000E1D55 /* beltexam.xcdatamodel */,
+			);
+			currentVersion = 954390991FBF61A6000E1D55 /* beltexam.xcdatamodel */;
+			path = beltexam.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 954390861FBF61A6000E1D55 /* Project object */;
+}
