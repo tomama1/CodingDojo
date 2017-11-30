@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> Hunting Github</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+    <button id="onlybutton"> Grab Username </button>
+    <div id="result"></div>
+</body>
+
+<script>
+
+var button = document.getElementById("onlybutton");
+button.addEventListener("click", dothis);
+
+
+function dothis(){
+    $.get("https://api.github.com/users/tomama", displayName);
+}
+
+// Notice that displayName is a function that takes in 1 parameter (this is the data that comes back from the API)
+function displayName(data) {
+  console.log(data);
+  document.getElementById("result").innerHTML = data["login"];
+}
+
+</script>
+    </html>
