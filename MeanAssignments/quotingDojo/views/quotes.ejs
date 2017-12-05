@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quotes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        h4{
+            padding-left: 30px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Here are the awesome quotes!</h1>
+        <% for (var x in posts) { %>
+            <h3><%= posts[x].message %></h3>
+            <h4> -- <%= posts[x].name %> at <%= posts[x].date %></h4>
+            <hr>
+        <% } %>
+    </body>
+</html>

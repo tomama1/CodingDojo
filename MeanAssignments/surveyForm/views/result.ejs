@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+</head>
+<body>
+    <h1> Result Page</h1>
+<table>
+    <tr>
+        <td> Name:</td><td> <%= data.name %> </td>
+    </tr>
+    <tr>
+        <td> Location:</td><td> <%= data.location %> </td>
+    </tr>
+    <tr>
+        <td> Language:</td><td> <%= data.language %> </td>
+    </tr>
+    <tr>
+        <td> Comment:</td><td> <%= data.comment %> </td>
+    </tr>
+</table>
+
+<form action ="/goback" method="GET">
+    <input type="submit" value="Go Back">
+</form>
+</body>
+</html>

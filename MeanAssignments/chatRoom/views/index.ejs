@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chat Room</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script>
+        $(document).ready(function(){
+            var socket  = io.connect();
+            var name = prompt("Please enter your name");
+            socket.emit("new_user", {name: name});
+
+
+            $('#send').click(function(){
+                socket.emit("new_message", { name: name, msg : $('#msg').val()});
+                $('#msg').val('');
+            });
+            socket.on("newuser_added", function(data){
+                for(var i=0;i<data.response.length;i++){
+                    $('#chatlog').append(data.response[i].name+" : "+data.response[i].msg)
+                    $('#chatlog').append("<br>");
+                }
+            })
+            socket.on("update_msglog", function (data){
+                $('#chatlog').append(data.response.name+" : "+data.response.msg)
+                $('#chatlog').append("<br>");
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <h2> Chat Room </h2>
+    <div id="chatlog" style="height:500px;width:500px;">
+
+    </div>
+
+    <div id="entermsg">
+        <input type="text" id="msg">
+    </div>
+
+
+    <button id="send">
+    Send
+    </button>
+
+    </body>
+</html>

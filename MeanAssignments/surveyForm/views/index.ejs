@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // this triggers the connection event in our server!
+            var socket  = io.connect();
+            // we'll write all the socket stuff after the above line!
+            $('#surveyform').submit(function(event){
+                event.preventDefault();
+                console.log("hello");
+                socket.emit("posting_form", {
+                    name: $('#name').val(),
+                    location: $('#location').val(),
+                    language: $('#language').val(),
+                    comment: $('#comment').val()
+                });
+
+
+            });
+            socket.on('updated_message', function(data){
+                $('#result').html(JSON.stringify(data.response));
+            });
+            socket.on('random_number', function(data){
+                $('#result').append(JSON.stringify(data.response));
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <h1> Survey Form</h1>
+    <div id="result">
+    </div>
+    <form action="" id="surveyform">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td><select name="location" id="location">
+                    <option name="Mview"> Mountain View</option>
+                    <option name="Burbank"> Burbank</option>
+                    <option name="Seattle"> Seattle</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Favorite Language:</td>
+                <td><select name="language" id="language">
+                    <option name="Javascript"> Javascript</option>
+                    <option name="Python"> Python</option>
+                    <option name="Swift"> Swift</option>
+                </select></td>
+            </tr>
+        </table>
+        <h4>Comment (optional):</h4>
+        <textarea name="comment" id="comment"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
