@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register Form</title>
+</head>
+<body>
+  
+
+  <h1> Registration</h1>
+
+<div id="results" class="regdiv" *ngIf="submitted">
+  <fieldset>
+      {{finishedUser | json}}
+  </fieldset>
+
+
+</div>
+
+
+  <form (submit) = "onSubmit()" #userForm = "ngForm"  >
+  <div class="regdiv">
+
+    <fieldset>
+        <h2> Account Information </h2>
+
+  <table>
+    <tr>
+      <td>First Name</td>
+      <td><input type="text" name="fname" 
+        [(ngModel)]="newUser.fname"  
+        #fname="ngModel"
+        required
+        ></td>
+      <td *ngIf="fname.invalid && fname.touched" class="error">First Name is required</td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td><input type="text" name="lname" 
+        [(ngModel)]="newUser.lname"  
+        #lname="ngModel"
+        required
+        ></td>
+      <td *ngIf="lname.invalid && lname.touched" class="error"> Last Name is required</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input type="text" name="email" 
+        [(ngModel)]="newUser.email"  
+        #email="ngModel"
+        pattern = "^\S+@\S+$"
+        required
+        ></td>
+      <td *ngIf="email.invalid && email.touched" class="error"> Email must be Valid</td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td><input type="password" name="pw" 
+        [(ngModel)]="newUser.pw"  
+        #pw="ngModel"
+        required
+        ></td>
+      <td *ngIf="pw.invalid && pw.touched" class="error"> Password must be at least 16 characters long</td>
+    </tr>
+    <tr>
+      <td>Password Confirmation</td>
+      <td><input type="password" name="pwconf"
+        [(ngModel)]="newUser.pwconf"  
+        #pwconf="ngModel"
+        required
+        ></td>
+      <td *ngIf="(newUser.pw != newUser.pwconf) && (pwconf.touched)" class="error"> Password Confirmation must match Password</td>
+    </tr>
+    <tr>
+      <td>Street Address</td>
+      <td><input type="text" name="street" [(ngModel)]="newUser.street"  
+        #street="ngModel"
+        required
+        ></td>
+      <td *ngIf="street.invalid && street.touched" class="error"> Address is required</td>
+    </tr>
+    <tr>
+      <td>Unit/Apt #</td>
+      <td><input type="text" name="unit" [(ngModel)]="newUser.unit"  #unit="ngModel"></td>
+      <td *ngIf="unit.invalid && unit.touched"></td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td><input type="text" name="city" [(ngModel)]="newUser.city"  #city="ngModel"
+        required
+        ></td>
+      <td *ngIf="city.invalid && city.touched" class="error"> City is required</td>
+    </tr>
+    <tr>
+      <td>State</td>
+      <td><select name="state" [(ngModel)]="newUser.state"  #state="ngModel"
+        required>
+        <option *ngFor="let state of states">
+          {{state}}
+        </option>
+        </select>
+      </td>
+      <td *ngIf="state.invalid && state.touched" class="error">State is required</td>
+    </tr>
+
+    <tr>
+      <td>I'm feeling lucky:</td>
+      <td>Yes<input type="radio" name="lucky" value="yes" [(ngModel)]="newUser.lucky"  #lucky="ngModel">No<input type="radio" name="lucky" value="no" [(ngModel)]="newUser.lucky"></td>
+      <td *ngIf="lucky.invalid && lucky.touched" class="error">Choosing how you feel is required</td>
+    </tr>
+
+
+  </table>
+  </fieldset>
+
+</div>
+      <input type="submit" value="Submit" class="sbtn"
+      [disabled]="(userForm.invalid) && (newUser.pw != newUser.pwconf) ">
+  </form>
+
+  <p *ngIf="userForm.invalid && userForm.touched" class="error">Please fill out the form</p>
+
+
+</body>
+</html>

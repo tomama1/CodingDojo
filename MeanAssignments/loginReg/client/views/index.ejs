@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login/Registration</title>
+</head>
+<body>
+    <h2>Register Here</h2>
+
+    <table>
+        <form action="/user" method="POST">
+            <tr>
+                <td> First Name:</td>
+                <td> <input type="text" name="first_name"></td>
+            </tr>
+            <tr>
+                <td> Last Name:</td>
+                <td> <input type="text" name="last_name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Birthday:</td>
+                <td><input type="date" name="birthday"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Password Confirmation:</td>
+                <td><input type="password" name="pwconf"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Register"></td>
+            </tr>
+        </form>
+
+    </table>
+
+
+    <hr>
+
+    <h2> Login Here</h2>
+
+    <table>
+        <form action="/login" method="POST">
+        <tr>
+            <td> Email:</td>
+            <td><input type="email" name="loginemail"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="loginpassword"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Login"></td>
+        </tr>
+        </form>
+
+    </table>
+</body>
+</html>

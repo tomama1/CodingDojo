@@ -1,0 +1,15 @@
+.fieldset-auto-width {
+     display: inline-block;
+}
+
+.regdiv {
+    width: 600px;
+    margin-bottom: 10px;
+}
+.sbtn {
+    width: 600px;
+}
+
+.error {
+    color: red;
+}

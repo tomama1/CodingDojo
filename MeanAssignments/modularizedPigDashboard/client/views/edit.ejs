@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Pig</title>
+</head>
+<body>
+        <form action="/pig/<%=pig[0].id %>" method="POST">
+            <table>
+                <tr>
+                    <td> Type: </td>
+                    <td><input type="text" name="type" value="<%=pig[0].type %>"></td>
+                </tr>
+                <tr>
+                    <td> Part: </td>
+                    <td><input type="text" name="part" value="<%=pig[0].part %>"></td>
+                </tr>
+                <tr>
+                    <td> MBTI: </td>
+                    <td><input type="text" name="mbti" value="<%=pig[0].mbti %>"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Edit"></td>
+                </tr>
+            </table>
+        </form>
+
+    <a href="/"><button>Go Back</button></a>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pig Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    <h1> Pig Dashboard</h1>
+
+    <table>
+        <th>
+            <td>Type</td>
+        </th>
+        
+        <% if(pigs.length>0){for (var i in pigs){ %>
+            <tr>
+                <td> 
+                    <a href="/pig/<%= pigs[i].id %>"><%= pigs[i].type %> </a>
+                </td>
+                <td>
+                    <a href="/pig/edit/<%= pigs[i].id %>"><button>Edit Pig</button></a>
+                </td>
+                <td>
+                    <a href="/pig/destroy/<%= pigs[i].id %>"><button>Delete Pig</button></a>
+                </td>
+            </tr>
+        <% }} %>
+
+        <tr>
+            <td><a href="/pig/new"><button>Add Pig</button></a></td>
+        </tr>
+    </table>
+
+
+    </body>
+</html>
